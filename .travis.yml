@@ -1,0 +1,10 @@
+language: ruby
+
+services:
+  - docker
+
+before_install:
+  - provision.sh
+
+script:
+  - bundle exec rake test
